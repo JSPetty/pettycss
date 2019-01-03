@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-const ASSET_PATH = process.env.ASSET_PATH || '/'
+const ASSET_PATH = process.env.ASSET_PATH || '/pettycss/dist/'
 const NODE_ENV = process.env.NODE_ENV || 'development'
 
 module.exports = {
@@ -23,11 +23,11 @@ module.exports = {
         'jQuery': 'window.jQuery'
     },
     devServer: {
-        contentBase: '/', 
+        contentBase: '/',
         publicPath: '/',
         index: 'index.html',
         hot: true,
-        historyApiFallback: true, 
+        historyApiFallback: true,
         //contentBase: path.join(__dirname, 'dist'),
         // contentBase:  path.join(__dirname, 'dist'),
         compress: true,
