@@ -1,0 +1,25 @@
+//font-size: 16px;
+/* xs: 480 sm: 768 md: 1024 lg: 1200*/
+@screenName: xs, sm, md, lg;
+@screenValue: 30rem, 48rem, 64rem, 75rem;
+@screenMap: {
+  xs: 30rem;
+  sm: 48rem;
+  md: 64rem;
+  lg: 75rem;
+}
+
+// 栅格数
+@grid-count: 24;
+//关键字
+@container: ~"container";
+@row: ~"row";
+@col-name: ~"col";
+@reverse: ~"reverse";
+// 列边距
+@col-padding: 2rem;
+
+@gutter-width: 1rem;
+@outer-margin: 2rem;
+@gutter-compensation: @gutter-width  * -0.5;
+@half-gutter-width: @gutter-width * 0.5;

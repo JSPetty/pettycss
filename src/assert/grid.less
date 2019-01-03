@@ -1,0 +1,32 @@
+@import "util";
+@import "config";
+
+//- 栅格布局 Start
+.@{container},
+.@{container}-fluid {
+  .center(margin);
+  .transition(width, 0.9s, ubicc-bezier(1,-0.02, 0, 1.04));
+  min-width: 480px; /* 兼容不支持媒体选择的浏览器 */
+}
+.@{container}-fluid {
+  width: 100%;
+  min-width: 0;
+  .padding(@gutter-compensation, @col-padding);
+}
+
+.@{row} {
+  .flex();
+  .box-sizing();
+  .margin(@gutter-compensation, -@col-padding);
+  min-height: 1px;
+}
+
+.@{row}.reverse {
+  flex-direction: row-reverse;
+}
+.@{row}.reverse {
+  flex-direction: column-reverse;
+}
+
+// 循环列，设置基础css
+.make-grid(@screenMap);

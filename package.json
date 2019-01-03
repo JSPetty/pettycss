@@ -1,0 +1,50 @@
+{
+  "name": "pettycss",
+  "version": "1.0.0",
+  "description": "simple mobile first css system.",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack-dev-server",
+    "start": "cross-env NODE_ENV=development webpack --colors --profile --progress --display-modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSPetty/pettycss.git"
+  },
+  "author": "JasonTao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JSPetty/pettycss/issues"
+  },
+  "homepage": "https://github.com/JSPetty/pettycss#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/traverse": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.1.0",
+    "cssnano": "^4.1.8",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "json-loader": "^0.5.7",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.5.0",
+    "style-loader": "^0.23.1",
+    "sugarss": "^2.0.0",
+    "to-string-loader": "^1.1.5",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-hot-middleware": "^2.24.3"
+  }
+}
