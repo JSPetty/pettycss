@@ -1,3 +1,107 @@
-div {
-    height: 100%;
+:root{
+  --teal: #00796B; /*墨绿色主题*/
+  --white: #FFFFFF;
+  --grey:  #757575;
+  --grey7: rgba(117,117,117,.7);
+  --black7: rgba(0,0,0,.3);
+
+  --centered: {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  };
+}
+
+html {
+    fonnt-size: 12px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rotate {
+  transition: transform 1s;
+}
+.rotate:hover {
+  transform: rotate(360deg) scale(.6);
+}
+.little {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+.little-1 {
+  color: #757575;
+  font-size: 2rem;
+}
+.large {
+  color: var(--white);
+  font-size: 6rem;
+}
+.intro .large{
+  font-size: 6rem;
+}
+.large-1 {
+  font-size: 2.7rem;
+  /*//color: var(--grey);*/
+  color: black;
+}
+
+.underline {
+  border-bottom: 1px solid var(--black7);
+}
+.underline.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.s {
+  width: 100%;
+}
+
+.floor {
+  margin-top: 3rem;
+}
+
+.header {
+  height: 30rem;
+  background-color: var(--teal);
+  vertical-align: middle;
+  box-shadow: 0rem .3rem .3rem #BDBDBD;
+}
+header .intro {
+  align-items:center;
+  justify-content:center;
+  color: var(--white);
+}
+header.row .name {
+  margin-bottom: 3rem;
+}
+
+/**/
+.wrap {
+  margin: 3rem;
+}
+.box {
+  padding: 1rem;
+  background-color: beige;
+}
+.row div{
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: .1rem;
+  background-color: var(--teal);
+}
+article p {
+  margin-bottom: 1rem;
+}
+
+/**/
+footer {
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }

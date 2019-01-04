@@ -3,13 +3,45 @@
     <meta charset="UTF-8">
     <title>petty css</title>
   </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-4" style="background-color: antiquewhite"></div>
-        <div class="col-lg-1 col-lg-offset-2" style="background-color: aqua"></div>
-        <div class="col-lg-1" style="background-color: blue"></div>
-      </div>
-    </div>
+  <body class="container">
+    <header class="row header">
+      <section class="s center">
+        <div class="intro">
+          <div class="center name large"><span class="rotate">petty css</span>&nbsp栅格系统</div>
+          <div class="little">突发奇想的移动端优先CSS框架，小哥准备在下一个版本支持css next。</div>
+        </div>
+      </section>
+    </header>
+    <main class="wrap">
+      <section class="s responsive underline pb-2">
+        <article>
+          <p class="large large-1">响应试</p>
+          <p class="little little-1">根据屏幕大小调整格子的显示，设置xs sm md lg 四种级别，24格分割。</p>
+          <div class="box">
+            <div class="row">
+              <div class="col-xs-1 col-sm-10 col-md-4 col-lg-8">1</div>
+              <div class="col-xs-10 col-sm-4 col-md-20 col-lg-8">2</div>
+              <div class="col-xs-13 col-sm-10 col-md-4 col-lg-8">3</div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="s floor responsive underline pb-2">
+        <article>
+          <p class="large large-1">反向</p>
+          <p class="little little-1">反转行排序。</p>
+          <div class="box">
+            <div class="row reverse">
+              <div class="col-xs-1 col-sm-10 col-md-4 col-lg-8">1</div>
+              <div class="col-xs-10 col-sm-4 col-md-20 col-lg-8">2</div>
+              <div class="col-xs-13 col-sm-10 col-md-4 col-lg-8">3</div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      Copyright © 2019 JasonTao. All rights reserved.
+    </footer>
   </body>
 </html>
